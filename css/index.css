@@ -1,47 +1,59 @@
 main {
     width: 100%;
-    height: 100vh;
-    background-color: var(--db);
+    height: 130vh;
+    background: url(../images/home.png) top / cover no-repeat var(--db);
+    /*background-color: var(--db);
     background-image: url(../images/front.png);
     background-size:cover;
     background-repeat: no-repeat;
-    background-position: center;
+    background-position: center;*/
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-main .main-home h1{
+main .main-home h1{ 
     font-size: 96px;
-    line-height: 106px;  
-}
+    line-height: 106px;
+    padding: 0px 183px 342px 0px;
+} 
 
 main p{
     font-size: 18px;
     line-height: 30px;
 }
 
-main a{
-    margin-top: 30px;
+main a {
     font-size: 30px;
-    display: block;
-    background-color:var(--co);
-    padding: 10px 20px;
-    width: fit-content;
+    display: inline-block; /* Change to inline-block for better control over padding */
+    background-color: var(--co);
+    color: white; /* Add text color */
+    padding: 15px 40px; /* Adjust padding */
+    border-radius: 25px; /* Add border-radius for rounded corners */
+    text-decoration: none; /* Remove default underline */
     font-family: roboto;
+    transition: background-color 0.5s, color 0.5s; /* Add transition effect */
 }
 
-main .main-quote1{
-    border-left: 14px;
-    padding-left: 20px;
-    background-color: rgba(2, 48, 71,.5);
-    border-left: 40px;
-    border-color: var(--co);
+main a:hover {
+    background-color: var(--db); /* Change background color on hover */
+    color: var(--co); /* Change text color on hover */
+}
+.main-quote {
+    z-index: 1;
+    padding: 20px;
+    background-color: rgba(2, 48, 71, 0.5);
+    border-radius: 0 20px 20px 0;
+    position: relative; /* Required for positioning pseudo-element */
 }
 
-main .main-quote2{
-    border-left: 14px;
-    padding-left: 20px;
-    background-color: rgba(2, 48, 71,.5);
+.main-quote::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -10px; /* Adjust the distance of the margin from the left */
+    height: 100%;
+    width: 10px; /* Width of the orange margin */
+    background-color: var(--co); /* Orange color */
+    border-radius: 20px 0 0 20px; /* Ensure rounded border on the left */
 }
-
