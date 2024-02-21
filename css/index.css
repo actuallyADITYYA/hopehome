@@ -1,0 +1,47 @@
+main {
+    width: 100%;
+    height: 100vh;
+    background-color: var(--db);
+    background-image: url(../images/front.png);
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main .main-home h1{
+    font-size: 96px;
+    line-height: 106px;  
+}
+
+main p{
+    font-size: 18px;
+    line-height: 30px;
+}
+
+main a{
+    margin-top: 30px;
+    font-size: 30px;
+    display: block;
+    background-color:var(--co);
+    padding: 10px 20px;
+    width: fit-content;
+    font-family: roboto;
+}
+
+main .main-quote1{
+    border-left: 14px;
+    padding-left: 20px;
+    background-color: rgba(2, 48, 71,.5);
+    border-left: 40px;
+    border-color: var(--co);
+}
+
+main .main-quote2{
+    border-left: 14px;
+    padding-left: 20px;
+    background-color: rgba(2, 48, 71,.5);
+}
+
