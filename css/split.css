@@ -69,7 +69,7 @@ h1 {
 
 .split.left {
   left: 0;
-  /*background: url('ps.jpg');*/
+  background: url(../images/donate.png);
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -79,12 +79,11 @@ h1 {
   position: absolute;
   width: 100%;
   height: 100%;
-  background-color: var(--db);
 }
 
 .split.right {
   right: 0;
-  /*background: url('xbox.jpg');*/
+  background: url(../images/volunteer.jpg);
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -94,7 +93,6 @@ h1 {
   position: absolute;
   width: 100%;
   height: 100%;
-  background-color: var(--co);
 }
 
 .split.right,
