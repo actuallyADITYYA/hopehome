@@ -3,22 +3,11 @@ main {
     background: url(../images/home.png) top / cover no-repeat var(--db);
     margin-top: 80px; /* Adjust margin to create space below the header */
     padding-top: 20px; /* Add padding to create space between header and content */
-    height: calc(132vh - 80px); /* Adjust height dynamically based on viewport size */
+    height: calc(128vh - 80px); /* Adjust height dynamically based on viewport size */
     overflow: auto; /* Add overflow property to handle overflow content */
     display: flex;
     justify-content: center;
     align-items: center;
-}
-
-main .image:after {
-    background: linear-gradient(180deg,#0070,#0070 calc(100% - 100px),#007 100%,#007 0);
-    content: "";
-    height: 100%;
-    left: 0;
-    pointer-events: none;
-    position: absolute;
-    top: 0;
-    width: 100%;
 }
 
 main .main-home h1{ 
@@ -27,7 +16,7 @@ main .main-home h1{
     line-height: 106px;
     padding-bottom: 20px;
     right: 17vh; 
-    bottom: 15vh;
+    bottom: 20vh;
 } 
 
 main p{
@@ -36,15 +25,16 @@ main p{
 }
 
 main a {
-    font-size: 30px;
+    font-size: 50px;
     display: inline-block; /* Change to inline-block for better control over padding */
     background-color: var(--co);
-    color: white; /* Add text color */
-    padding: 0 25px; /* Adjust padding */
+    padding: 6px 25px; /* Adjust padding */
     border-radius: 25px; /* Add border-radius for rounded corners */
     text-decoration: none; /* Remove default underline */
     font-family: roboto;
     transition: background-color 0.5s, color 0.5s; /* Add transition effect */
+    height: 116px;
+    margin-top: 20px;
 }
 
 main a:hover {

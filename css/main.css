@@ -8,7 +8,7 @@
 }
 
 body{
-    background-color:var(--db) ;
+    background-image: linear-gradient(to left, black, var(--mb));
 }
 
 a{
@@ -33,15 +33,24 @@ p{
     font-family: roboto;
 }
 
+.header-main ul{
+    margin-top: 0px;
+    list-style-type: none;
+}
+
 .header-main{
     position: fixed;
-    background-color: rgba(23, 69, 80, 0.75);
+    background-color:rgba(33, 158, 188, 0.8);
+    top: 0;
+    left: 0;
     width: 100%;
     height: 80px;
     display: flex;
     justify-content: space-between;
     z-index: 100;
+    border: 2px var(--db);
 }
+
 .header-main-logo{
     width:120px; /*change to fit-content*/
     height:100%;
@@ -63,6 +72,7 @@ p{
 }
 
 .header-main-nav ul li{
+    font-size: 22px;
     display: inline;
     float: left;
     font-weight: 700;
@@ -76,7 +86,7 @@ p{
 
 /* Individual navigation link styles */
 .header-main-nav ul li a {
-    background-color: rgba(33, 158, 188, 0.6);
+    background-color: rgba(33, 158, 188, 0.65);
     display: inline-block; /* Make links block elements */
     padding: 0 12px; /* Add padding to create space around text */
     text-decoration: none; /* Remove default underline */
@@ -106,7 +116,7 @@ p{
 }
 
 .header-main-c a{
-    background-color: rgba(33, 158, 188, 0.6);
+    background-color: rgba(33, 158, 188, 0.85);
     display: inline-block; /* Make links block elements */
     padding: 0 12px; /* Add padding to create space around text */
     text-decoration: none; /* Remove default underline */
@@ -124,5 +134,4 @@ p{
 .bottom-index{
     width: 100%;
     height: 50vh;
-    background: var(--db);
 }
