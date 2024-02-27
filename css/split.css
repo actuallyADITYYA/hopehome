@@ -16,8 +16,9 @@ body {
 }
 
 h1 {
-  font-size: 4rem;
-  color: #fff;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  font-size: 6rem;
+  color: var(--co);
   position: absolute;
   left: 50%;
   top: 20%;
@@ -34,23 +35,27 @@ h1 {
   top: 40%;
   transform: translateX(-50%);
   text-decoration: none;
-  color: #fff;
-  border: #fff solid 0.2rem;
-  font-size: 1rem;
+  color: var(--db);
+  border: var(--co) 2px;
+  border-radius: 25px;
+  font-size: 2rem;
   font-weight: bold;
   text-transform: uppercase;
   width: 15rem;
   padding: 1.5rem;
+  background-color: var(--co);
 }
 
 .split.left .btn:hover {
+  color: var(--co);
   background-color: var(--db);
   border-color: var(--lb);
 }
 
 .split.right .btn:hover {
-  background-color: var(--right-btn-hover-color);
-  border-color: var(--right-btn-hover-color);
+  color: var(--co);
+  background-color: var(--db);
+  border-color: var(--lb);
 }
 
 .container {
@@ -69,7 +74,8 @@ h1 {
 
 .split.left {
   left: 0;
-  background: url(../images/donate.png);
+  background-color: var(--lb);
+  /*background: url(../images/donate.png);*/
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -83,7 +89,8 @@ h1 {
 
 .split.right {
   right: 0;
-  background: url(../images/volunteer.jpg);
+  background-color: var(--db);
+  /*background: url(../images/volunteer.jpg);*/
   background-repeat: no-repeat;
   background-size: cover;
 }

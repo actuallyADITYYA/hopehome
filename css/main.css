@@ -26,13 +26,6 @@ h1{
     font-weight: 600;
 }
 
-p{
-    font-size: 14px;
-    line-height: 18px;
-    color: white;
-    font-family: roboto;
-}
-
 .header-main ul{
     margin-top: 0px;
     list-style-type: none;
@@ -86,15 +79,27 @@ p{
 
 /* Individual navigation link styles */
 .header-main-nav ul li a {
-    background-color: rgba(33, 158, 188, 0.65);
+    /*background-color: rgba(33, 158, 188, 0.65);*/
     display: inline-block; /* Make links block elements */
     padding: 0 12px; /* Add padding to create space around text */
     text-decoration: none; /* Remove default underline */
-    border: 2px solid var(--db); /* Add border with coral color */
+    /*border: 2px solid var(--db);*/ /* Add border with coral color */
     border-radius: 5px; /* Add border radius for rounded corners */
     color: var(--db); /* Set text color to white */
     font-family: "Roboto", sans-serif; /* Use Roboto font */
     transition: background-color 0.5s, color 0.5s; 
+}
+
+.header-main-nav ul li a.current-page {
+    background-color: var(--db); /* Highlight color for the current page */
+    color: var(--co); /* Text color */
+    border: 2px solid var(--db);
+}
+
+.header-main-c ul li a.current-page {
+    background-color: var(--db); /* Highlight color for the current page */
+    color: var(--co); /* Text color */
+    border: 2px solid var(--db);
 }
 
 /* Hover effect for navigation links */
@@ -129,9 +134,164 @@ p{
 .header-main-c a:hover{    
     background-color: var(--db); /* Change background color on hover */
     color: var(--co); /* Change text color on hover */
-    border: 2px solid var(--db);}
+    border: 2px solid var(--db);
+}
 
-.bottom-index{
+main {
     width: 100%;
-    height: 50vh;
+    background: url(../images/home.png) top / cover no-repeat var(--db);
+    margin-top: 80px; /* Adjust margin to create space below the header */
+    padding-top: 20px; /* Add padding to create space between header and content */
+    height: calc(128vh - 80px); /* Adjust height dynamically based on viewport size */
+    overflow: auto; /* Add overflow property to handle overflow content */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main .main-home h1{ 
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+    position: relative;
+    font-size: 96px;
+    line-height: 106px;
+    padding-bottom: 20px;
+    right: 17vh; 
+    bottom: 20vh;
+} 
+
+main a {
+    text-shadow: none;
+    font-size: 50px;
+    display: inline-block; /* Change to inline-block for better control over padding */
+    background-color: var(--co);
+    padding: 6px 25px; /* Adjust padding */
+    border-radius: 25px; /* Add border-radius for rounded corners */
+    text-decoration: none; /* Remove default underline */
+    font-family: roboto;
+    transition: background-color 0.5s, color 0.5s; /* Add transition effect */
+    height: 116px;
+    margin-top: 20px;
+}
+
+main a:hover {
+    background-color: var(--db); /* Change background color on hover */
+    color: var(--co); /* Change text color on hover */
+}
+.main-quote p {
+    font-size: 18px;
+    line-height: 30px;
+    color: white;
+    width: fit-content;
+    font-family: roboto;
+    z-index: 1;
+    padding: 20px;
+    margin: 40px 0;
+    background-color: rgba(2, 48, 71, 0.5);
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+    border-radius: 0 20px 20px 0;
+    position: relative; /* Required for positioning pseudo-element */
+    left: 21vh;
+    bottom: 25vh;
+}
+
+.main-quote p:nth-child(2) {
+    margin-left:90px; 
+}
+
+.main-quote p::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -10px; /* Adjust the distance of the margin from the left */
+    height: 100%;
+    width: 10px; /* Width of the orange margin */
+    background-color: var(--co); /* Orange color */
+    border-radius: 20px 0 0 20px; /* Ensure rounded border on the left */
+}
+
+.line{
+    width: 100%;
+    height: 12px;
+    background-color: var(--co);
+}    
+
+section{
+    margin-top: 15px;
+    text-align: center;
+    color: white;
+}
+
+h2{
+    font-weight: 300;
+    color: var(--lb);
+    font-size: 50px;
+}
+
+.element-container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.card {
+    margin: 50px 30px;
+    box-shadow: 0 5px 5px 0 #00000025;
+    position: relative;
+    overflow: hidden;
+    border-radius: var(--border-radius);
+    transition: all 0.3s ease-in-out;
+}
+
+section.products h3 {
+    background-color: var(--db);
+    color: var(--co);
+}
+
+.card > h3 {
+    padding: 1rem;
+}
+
+h3 {
+    display: block;
+    font-size: 1.17em;
+    font-weight: bold;
+}
+
+.pop-up {
+    background-color: var(--primary-color);
+    padding: 0.5rem;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    max-height: 100%;
+    transform: translateY(101%);
+    overflow-y: auto;
+    transition: transform 0.3s ease-in-out;
+}
+
+button {
+    appearance: auto;
+    text-rendering: auto;
+    color: var(--co);
+    letter-spacing: normal;
+    word-spacing: normal;
+    line-height: normal;
+    text-transform: none;
+    text-indent: 0px;
+    text-shadow: none;
+    display: inline-block;
+    text-align: center;
+    align-items: flex-start;
+    cursor: default;
+    box-sizing: border-box;
+    background-color: var(--db);
+    margin: 0em;
+    padding-block: 1px;
+    padding-inline: 6px;
+    border-width: 2px;
+    border-style: outset;
+    border-color: var(--co);
+    border-image: initial;
 }

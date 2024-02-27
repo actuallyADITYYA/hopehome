@@ -1,0 +1,11 @@
+body {
+    background-image: linear-gradient(to left, black, var(--mb));
+}
+
+.topic{
+    width: 60%;
+    height: 800px;
+    margin-top: 80px;
+    margin-left: 100px;
+    background-color: var(--co);
+}
