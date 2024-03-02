@@ -239,7 +239,7 @@ section{
     color: white;
 }
 
-h2{
+.products h2{
     font-weight: 300;
     color: var(--lb);
     font-size: 50px;
@@ -263,16 +263,13 @@ h2{
 section.products h3 {
     background-color: var(--db);
     color: var(--co);
+    display: block;
+    font-size: 1.17em;
+    font-weight: bold;
 }
 
 .card > h3 {
     padding: 1rem;
-}
-
-h3 {
-    display: block;
-    font-size: 1.17em;
-    font-weight: bold;
 }
 
 .pop-up {

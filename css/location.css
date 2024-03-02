@@ -1,38 +1,157 @@
 
 .mid{
-    background-color: var(--lb);
+    background-image: linear-gradient(to right, black, var(--mb));
     width: 100%;
-    height: 980px;
+    height: 2500px;
     position: absolute;
     z-index: 1;
 }
 
 .loc{
     background-color: var(--co);
+    font-family: roboto;
     width: 50%;
-    height: 800px;
+    height: 500px;
     margin-top: 120px;
     position: absolute;
-    z-index: 5;
+    z-index: 3;
     border-radius: 0 80px 80px 0;
+}
+
+.loc h1{
+    margin-left: 40px;
+    margin-top: 80px ;
+    color: var(--db);
+    font-size: 62px;
+    font-weight: 900;
+    animation-duration: 3s;
+    animation-name: slide;
+}
+
+@keyframes slide {
+    from {
+        transform: translateX(+100%); 
+    }
+    to {
+        transform: translateX(0%);
+    }
+}
+
+.loc p{
+    margin-left: 40px;
+    color: var(--db);
+    font-size: 32px;
+    font-weight: 300;
+    animation-duration: 7s;
+    animation-name: blur;
+}
+
+@keyframes blur{
+    from {
+         opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
 }
 
 .map{
     background-color: var(--db);
-    width: 865px;
+    width: 1160px;
     height: 720px;
-    margin-top: 160px;
-    margin-left: 750px;
+    margin-top: 341px;
+    margin-left: 455px;
     position: absolute;
-    z-index: 6;
+    z-index: 4;
     border-radius: 150px;
 }
 
-.bottom{
-    background-color: var(--db);
-    margin-top: 980px;
-    width: 100%;
-    height: 900px;
+.map img{
+    margin-left: 10px;
+    margin-top: 10px;
+    height: 700px;
+    width: 1140px;
+    background-repeat: no-repeat;
+    border-radius: 140px;
+    opacity: 0; /* Initially set opacity to 0 */
+    animation-duration: 8s; /* Animation duration */
+    animation-name: fadeIn; /* Animation name */
+    animation-fill-mode: forwards; /* Keep the image at the final keyframe after animation */
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0; /* Fade in from completely transparent */
+    }
+    to {
+        opacity: 1; /* Fade in to fully opaque */
+    }
+} 
+
+.container {
     position: absolute;
     z-index: 6;
+    background-color: var(--co);
+    height: 550px;
+    width: 1565px;
+    margin-top: 1150px;
+    margin-left: 74px;
+    border-radius: 80px;
+}
+
+.container h2{
+    margin-top: 30px;
+    margin-left: 60px;
+    color: var(--db);
+    font-family: roboto;
+    font-size: 60px;
+    font-weight: 600;
+}
+
+.container ul{
+    margin-top: 30px;
+    margin-left: 90px;
+    list-style-type: disc;
+    color: var(--db);
+    font-family: roboto;
+    font-size: 22px;
+    font-weight: 400;
+}
+
+.tab{
+    height: 471px;
+    width: 852px;
+    margin-left: 580px;
+    margin-top: -496px;
+}
+
+table {
+    font-family: roboto;
+    font-size: 20px;
+    margin-top: 25px;
+    margin-left: 40px;
+    border-collapse: collapse;
+    width: 80%; /* Reduced width for better responsiveness */
+}
+th, td {
+    border: 2px solid var(--db);
+    text-align: left;
+    padding: 10px;
+}
+th {
+    color: var(--co);
+    background-color: var(--db);
+    transition: background-color 0.3s, color 0.3s; /* Smooth transition on hover */
+}
+td {
+    transition: background-color 0.3s; /* Smooth transition on hover */
+}
+/* Hover effect */
+th:hover {
+    background-color: var(--co); /* Change background color on hover */
+    color: var(--db); /* Change text color on hover */
+}
+td:hover {
+    background-color: var(--db); /* Change background color on hover */
+    color: var(--co); /* Change text color on hover */
 }

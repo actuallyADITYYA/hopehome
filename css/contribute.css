@@ -124,7 +124,20 @@ button:hover {
     width: 845px;
     background-repeat: no-repeat;
     border-radius: 140px;
+    opacity: 0; /* Initially set opacity to 0 */
+    animation-duration: 3s; /* Animation duration */
+    animation-name: fadeIn; /* Animation name */
+    animation-fill-mode: forwards; /* Keep the image at the final keyframe after animation */
 }
+
+@keyframes fadeIn {
+    from {
+        opacity: 0; /* Fade in from completely transparent */
+    }
+    to {
+        opacity: 1; /* Fade in to fully opaque */
+    }
+} 
 
 .vol{
     font-family: roboto;
@@ -244,4 +257,17 @@ button:hover {
     width: 845px;
     background-repeat: no-repeat;
     border-radius: 140px;
+    opacity: 0; /* Initially set opacity to 0 */
+    animation-duration: 3s; /* Animation duration */
+    animation-name: fadeIn; /* Animation name */
+    animation-fill-mode: forwards; /* Keep the image at the final keyframe after animation */
 }
+
+@keyframes fadeIn {
+    from {
+        opacity: 0; /* Fade in from completely transparent */
+    }
+    to {
+        opacity: 1; /* Fade in to fully opaque */
+    }
+} 
