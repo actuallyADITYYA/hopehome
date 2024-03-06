@@ -25,7 +25,8 @@ a{
 
 .header-main{
     position: fixed;
-    background-color:rgba(33, 158, 188, 0.8);
+    opacity: 0.9;
+    background-image: linear-gradient(to right, var(--co), var(--cy));
     top: 0;
     left: 0;
     width: 100%;
@@ -113,7 +114,6 @@ a{
 }
 
 .header-main-c a{
-    background-color: rgba(33, 158, 188, 0.85);
     display: inline-block; /* Make links block elements */
     padding: 0 12px; /* Add padding to create space around text */
     text-decoration: none; /* Remove default underline */
@@ -229,35 +229,24 @@ main a:hover {
 
 .line{
     width: 100%;
-    height: 12px;
-    background-color: var(--co);
+    height: 6px;
+    background-image: linear-gradient(to right, var(--co), var(--cy));
 }    
 
 section{
     width: 100%;
-    height: 900px;
+    height: 470px;
 }
 
 .main-form{
     z-index: 3;
     position: absolute;
-    margin-top: 60px;
-    margin-left: 1045px;
+    margin-top: 100px;
+    margin-left: 990px;
     height: 265px;
     width: 600px;
-    border-radius: 50px;
+    border-radius: 25px;
     background-color: var(--db);
-}
-
-.info{
-    z-index: 2;
-    position: absolute;
-    margin-top: 150px;
-    margin-left: 60px;
-    border-radius: 50px;
-    height: 670px;
-    width: 1040px;
-    background-color: var(--co);
 }
 
 .main-form form{
@@ -334,3 +323,85 @@ section{
     color: var(--db);
 }
   
+.info{
+    z-index: 2;
+    position: absolute;
+    margin-top: 60px;
+    margin-left: 60px;
+    border-radius: 50px;
+    height: 345px;
+    width: 1570px;
+    background-image: linear-gradient(to right, var(--co), var(--cy));
+}
+
+.info h2{
+    font-size: 45px;
+    font-family: roboto;
+    color: var(--db);
+    font-weight: 800;
+    margin-top: 40px;
+    margin-left: 180px;
+}
+
+.l1{
+    z-index: 8;
+    position: absolute;
+    margin-left: 15px;
+    height: 180px;
+    width: 440px;
+}
+
+.l2{
+    z-index: 9;
+    position: absolute;
+    margin-left: 473px;
+    height: 180px;
+    width: 440px;
+}
+
+.info ul{
+    margin-left:20px;
+    color: var(--db);
+    list-style-type: disc;
+    font-family: roboto;
+    font-size: 15px;
+    font-weight: 400;
+}
+
+.l2 ul{
+    color: var(--db);
+    list-style-type: disc;
+    font-family: roboto;
+    font-size: 15px;
+    font-weight: 400;
+}
+
+.info ul li{
+    margin-top: 10px;
+}
+
+strong{
+    font-family: roboto;
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.info a{
+    position: absolute;
+    font-family: roboto;
+    font-size: 18px;
+    font-weight: 400;
+    color: var(--db);
+    border: 2px solid var(--db);
+    padding: 10px;
+    border-radius: 15px;
+    margin-left: 375px;
+    margin-top: 168px;
+    transition: background-color 0.5s, color 0.5s;
+}
+
+.info a:hover{
+    color: var(--co);
+    background-color: var(--db);
+    cursor: pointer;
+}

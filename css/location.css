@@ -8,7 +8,7 @@
 }
 
 .loc{
-    background-color: var(--co);
+    background-image: linear-gradient(to right, var(--co), var(--cy));
     font-family: roboto;
     width: 50%;
     height: 500px;
@@ -91,7 +91,7 @@
 .container {
     position: absolute;
     z-index: 6;
-    background-color: var(--co);
+    background-image: linear-gradient(to right, var(--co), var(--cy));
     height: 550px;
     width: 1565px;
     margin-top: 1150px;

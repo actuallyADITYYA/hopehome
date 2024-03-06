@@ -8,7 +8,7 @@
 
 .don{
     font-family: roboto;
-    background-color: var(--co);
+    background-image: linear-gradient(to right, var(--co), var(--cy));
     width: 50%;
     height: 800px;
     margin-top: 120px;
@@ -84,7 +84,6 @@
     padding: 5px 35px 5px 35px;
     border-radius: 15px;
     color: var(--db);
-    background-color: var(--co);
     border: 2px solid var(--db);
     position: relative; /* Add position relative */
     transition: 0.7s;
@@ -141,7 +140,7 @@ button:hover {
 
 .vol{
     font-family: roboto;
-    background-color: var(--co);
+    background-image: linear-gradient(to right, var(--co), var(--cy));
     width: 50%;
     height: 800px;
     margin-top: 980px;
@@ -217,7 +216,6 @@ button:hover {
     padding: 5px 35px 5px 35px;
     border-radius: 15px;
     color: var(--db);
-    background-color: var(--co);
     border: 2px solid var(--db);
     position: relative; /* Add position relative */
     transition: 0.7s;
