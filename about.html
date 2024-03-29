@@ -1,38 +1,128 @@
 <!DOCTYPE html>
 <html lang="eng">
     <head>
-        <title>Homepage</title>
+        <title>About Us ⋅ HopeHome</title>
+        <meta charset="UTF-8">
+        <link rel="shortcut icon" href="images/logo.png" type="image/x-icon">
         <!--Allows website to be responsive in different devices-->
         <meta name="viewport" content="width-device-width, initial-scale=1.0">
         <!--links for the fonts used in the website-->
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Protest+Riot&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,1,0" />
         <!--Resets all the styling for different browsers-->
         <link rel="stylesheet" href="css/reset.css">
-        <link rel="stylesheet" href="css/main.css">  <!--Link to main css file-->
-        <link rel="stylesheet" href="css/location.css">  <!--css for index page-->
+        <link rel="stylesheet" href="css/nav.css">  <!--Link to main css file-->
+        <link rel="stylesheet" href="css/about.css">  <!--css for index page-->
     </head>
     <body>
         <header class="header-main">
             <div class="header-main-logo">
-            <img src="images/hh_logo.png" alt="alternate logo">
+                <a href="index.html"><img src="images/hh_logo.png" alt="alternate logo"></a>
+            <img src="images/hopehome.png" alt="main logo">
             </div>
             <nav class="header-main-nav">
                 <ul>
                     <li><a href="index.html" >HOME</a></li>
                     <li><a href="contribute.html">CONTRIBUTE</a></li>
                     <li><a href="location.html">LOCATIONS</a></li>
-                    <li><a href="vlogs.html">VLOGS</a></li>
+                    <li><a href="info.html">INFO</a></li>
                     <li><a href="about.html" class="current-page">ABOUT US</a></li>
-                    <!--pages left are "news/gallery" and "contact"-->
                 </ul>
             </nav>
+            <div class="nav-bottom">
+                <a href="index.html" class="current">
+                    <span class="material-symbols-outlined">
+                        home
+                        </span>
+                    <i class="material-icons">home</i>
+                </a>
+                <a href="contribute.html">
+                    <span class="material-symbols-outlined">
+                        volunteer_activism
+                        </span>
+                    <i class="material-icons">contribute</i>
+                </a>
+                <a href="location.html">
+                    <span class="material-symbols-outlined">
+                        home_pin
+                        </span>
+                    <i class="material-icons">location</i>
+                </a>
+                <a href="info.html">
+                    <span class="material-symbols-outlined">
+                        info
+                        </span>
+                    <i class="material-icons">info</i>
+                </a>
+                <a href="about.html">
+                    <span class="material-symbols-outlined">
+                        person
+                        </span>
+                    <i class="material-icons">about</i>
+                </a>
+            </div>
             <div class="header-main-c">
                 <ul>
                     <li><a href="contact.html">Contact Us</a></li>
                 </ul>
             </div>
         </header>
+        <div class="hero">
+            <div class="slideshow-container">
+                <div class="slide fade">
+                <img src="images/donation.jpg">
+                </div>
+            
+                <div class="slide fade">
+                <img src="images/donate.png">
+                </div>
+            
+                <div class="slide fade">
+                <img src="images/help.jpg">
+                </div>
+            </div>
+            <div class="data">
+                <h1>About Us</h1>
+                <br>
+                <p>Our charity, "Hope Home", is dedicated in Empowering the homeless through support, resources, and advocacy for a society where everyone has access to safe housing and opportunity. Since 2024, we've been committed to our mission, striving to make a meaningful difference in our community. We address the root causes of Homelessness, empowering individuals and communities to thrive.</p><br>
+                <p>Transparency and accountability are central to our work. We believe in openly sharing information about our finances, programs, and impact to earn and maintain the trust of our supporters. Collaboration is key to our success. By partnering with like-minded organizations and community leaders, we amplify our impact and drive systemic change.</p><br>
+                <p>As we look ahead, we're inspired by the progress we've made and the challenges that remain. With the continued support of donors, volunteers, and partners, we're confident in our ability to create positive change and build a brighter future. We invite you to join us in our mission. Whether through volunteering, donating, or raising awareness, your support can make a real difference. Together, we can create a more just, equitable, and compassionate world for all. Thank you for standing with us.</p><br>
+            </div>
+        </div>
+            <div class="mi">
+                <ul>
+                <li><h3>Our Mission</h3>
+                    <ol>
+                    <li>Provide safe support for homeless individuals and families.</li>
+                    <li>Empower them toward independence via comprehensive services.</li>
+                    <li>Raise awareness and advocate for sustainable solutions.</li>
+                    </ol>
+                </li>
+                <li><h3>Our Vision</h3>
+                    <ol>
+                    <li>Build a future for the world with minimal e-waste.</li>
+                    <li>Encourage the reuse of electronics.</li>
+                    <li>Raise a generation of sustainablility and responsibility in electronics usage.</li>
+                    </ol>
+                </li>
+                <li><h3>Our Goal</h3>
+                    <ol>
+                    <li>A community with universal access to stable housing.</li>
+                    <li>Destigmatize homelessness and promote collective action.</li>
+                    <li>Achieve lasting social change and equality for all.</li>
+                    </ol>
+                </li>
+                </ul>
+            </div>
+            <footer class="footer">
+                <h2>Find Us</h2>
+                <div class="find-us">
+                    <img src="images/sm.png" height="50" width="190" alt="socialmedia-icon">
+                </div>
+                <p>Copyright &#169; 2024 <a href="http://www.linkedin.com/in/aditya-prakash003" style="font-weight: 600; cursor: pointer;">Aditya Prakash</a>. All Rights Reserved.</p>
+            </footer>
+        <script src="js/slide.js"></script>
     </body>
 </html>
