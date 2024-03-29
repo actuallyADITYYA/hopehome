@@ -1,0 +1,241 @@
+:root{
+    /*variables for colors throughout the website*/
+    --db: #023047;
+    --mb: #219ebc;
+    --lb: #8ecae6;
+    --cy: #ffb703;
+    --co: #fb8500;
+}
+
+.header-main ul{
+    margin-top: 0px;
+    list-style-type: none;
+}
+
+.header-main{ 
+    top: 0px;
+    margin-top: 4px;
+    border-radius: 40px 0 0 40px;
+    border: 1px solid var(--db);
+    position: fixed;
+    background-image: linear-gradient(to right, var(--co), var(--cy));
+    width: 100%;
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    z-index: 100;
+}
+
+.header-main-logo{
+    width:fit-content; /*change to fit-content*/
+    height: 80px;
+    margin-left: 0px;
+    flex-direction: row;
+    display: flex;
+}
+
+.header-main-logo img{
+    height: 80px;
+    width: 80px;
+    align-self: center;
+}
+.header-main-logo img:nth-child(2){
+    height: 60px;
+    width: 160px;
+    align-self: center;
+}
+
+.header-main-nav{
+    width: fit-content;
+    height:100%;
+}
+
+.header-main-nav ul{
+    list-style: none;
+}
+
+.header-main-nav ul li{
+    font-size: 22px;
+    display: inline;
+    float: left;
+    font-weight: 700;
+    line-height: 30px;
+    margin-top: 23px;
+    margin-left: 20px;
+    margin-right: 20px;
+    font-family: "Roboto", sans-serif;
+    /*other one in case font-family: "Protest Riot", sans-serif;*/
+}
+
+/* Individual navigation link styles */
+.header-main-nav ul li a {
+    /*background-color: rgba(33, 158, 188, 0.65);*/
+    display: inline-block; /* Make links block elements */
+    padding: 0 12px; /* Add padding to create space around text */
+    text-decoration: none; /* Remove default underline */
+    /*border: 2px solid var(--db);*/ /* Add border with coral color */
+    border-radius: 5px; /* Add border radius for rounded corners */
+    color: var(--db); /* Set text color to white */
+    font-family: "Roboto", sans-serif; /* Use Roboto font */
+    transition: background-color 0.5s, color 0.5s; 
+}
+
+.header-main-nav ul li a.current-page {
+    background-color: var(--db); /* Highlight color for the current page */
+    color: var(--co); /* Text color */
+    border: 2px solid var(--db);
+}
+
+.header-main-c ul li a.current-page {
+    background-color: var(--db); /* Highlight color for the current page */
+    color: var(--co); /* Text color */
+    border: 2px solid var(--db);
+}
+
+/* Hover effect for navigation links */
+.header-main-nav ul li a:hover {
+    background-color: var(--db); /* Change background color on hover */
+    color: var(--co); /* Change text color on hover */
+    border: 2px solid var(--db);
+}
+
+.header-main-c{
+    width: fit-content;
+    height:100%;
+    font-weight: 500;
+    font-family: "Roboto", sans-serif;
+    align-self: center;
+    margin-top: 47px;
+    line-height: 30px;
+    margin-right: 40px;
+}
+
+.header-main-c a{
+    display: inline-block; /* Make links block elements */
+    padding: 0 12px; /* Add padding to create space around text */
+    text-decoration: none; /* Remove default underline */
+    border: 2px solid var(--db); /* Add border with coral color */
+    border-radius: 5px; /* Add border radius for rounded corners */
+    color: var(--db); /* Set text color to white */
+    font-family: "Roboto", sans-serif; /* Use Roboto font */
+    transition: 0.5s, color 0.5s; 
+}
+.header-main-c a:hover{    
+    background-color: var(--db); /* Change background color on hover */
+    color: var(--co); /* Change text color on hover */
+    border: 2px solid var(--db);
+}
+.nav-bottom {
+    position: fixed;
+    display: none;
+    bottom: 0;
+    width: 100%;
+    overflow-x: auto;
+    justify-content: space-around;
+    background-image: linear-gradient(to right, var(--co), var(--cy));
+    padding: .5rem;
+    transition: all 0.3s ease-in-out;
+}
+  
+  /* Styling the links of the bottom navigation bar. */
+.nav-bottom a {
+    margin-left: 1px;
+    text-decoration: none;
+    color: var(--db);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-width: 50px;
+    overflow: hidden;
+    white-space: nowrap;
+    padding: .2rem; /* This is to add whitespace so that the nav bar will not overlap with the bottom contents. */
+    transition: background-color 0.3s ease-in-out;
+}
+.nav-bottom a:hover{
+    border-radius: 10px;
+    color: var(--co);
+    background-color: var(--db);
+}
+.material-icons {
+    font-family: Roboto;
+    font-weight: normal;
+    font-style: normal;
+    font-size: 20px;
+}
+.material-symbols-outlined {
+    font-family: 'Material Symbols Outlined';
+    font-weight: 400;
+    font-style: normal;
+    font-size: 30px;
+}
+.footer {
+    bottom: 0px;
+    font-family: roboto;
+    background-image: linear-gradient(to right, var(--co), var(--cy));
+    color: var(--db);
+}
+
+.footer h2 {
+    font-size: 25px;
+    font-weight: 700;
+    width: 100%;
+    text-align: center;
+    padding-top: 1rem;
+    padding-bottom: 0.5rem;
+}
+
+.footer .find-us {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+
+.footer p {
+    color: var(--db);
+    padding-top: 0.5rem;
+    padding-bottom: 1rem;
+    text-align: center;
+}
+@media (max-width:1165px){
+    .header-main-nav ul li{
+        margin-right: 0px;
+        margin-left: 5px;
+    }
+}
+@media (max-width:990px){
+    .header-main-nav ul li{
+        font-size: 16px;
+        font-weight: 700;
+    }
+}
+@media (max-width:850px){
+    .header-main{
+        height: 60px;
+    }
+    .header-main-logo img{
+        height:60px;
+    }
+    .header-main-nav ul li{
+        margin-top: 15px;
+        font-size: 12px;
+    }
+    .header-main-c{
+        margin-top: 25px;
+        font-size: 12px ;
+    }
+}
+@media (max-width:730px){
+    .nav-bottom{
+        display: flex;
+    }
+    .header-main-nav ul li{
+        display: none;
+    }
+    .header-main-c{
+        margin-right: 10px;
+    }
+    .footer{
+        margin-bottom:80px;
+    }
+}

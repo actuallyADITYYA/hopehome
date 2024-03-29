@@ -1,36 +1,167 @@
 <!DOCTYPE html>
-<html lang="eng">
+<html lang="en">
     <head>
-        <title>Contact Us</title>
+        <title>Contact Us ⋅ HopeHome</title>
+        <meta charset="UTF-8">
+        <link rel="shortcut icon" href="images/logo.png" type="image/x-icon">
         <!--Allows website to be responsive in different devices-->
         <meta name="viewport" content="width-device-width, initial-scale=1.0">
         <!--links for the fonts used in the website-->
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Protest+Riot&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,1,0" />
         <!--Resets all the styling for different browsers-->
-        <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="css/reset.css">
+        <link rel="stylesheet" href="css/nav.css">
         <link rel="stylesheet" href="css/contact.css"> <!--css link for this page-->
     <body>
         <header class="header-main">
             <div class="header-main-logo">
-            <img src="images/hh_logo.png" alt="alternate logo">
+              <a href="index.html"><img src="images/hh_logo.png" alt="alternate logo"></a>
+            <img src="images/hopehome.png" alt="main logo">
             </div>
             <nav class="header-main-nav">
                 <ul>
                     <li><a href="index.html" >HOME</a></li>
                     <li><a href="contribute.html">CONTRIBUTE</a></li>
                     <li><a href="location.html">LOCATIONS</a></li>
-                    <li><a href="blogs.html">BLOGS</a></li>
+                    <li><a href="info.html">INFO</a></li>
                     <li><a href="about.html">ABOUT US</a></li>
                     <!--pages left are "news/gallery" and "contact"-->
                 </ul>
             </nav>
+            <div class="nav-bottom">
+              <a href="index.html" class="current">
+                  <span class="material-symbols-outlined">
+                      home
+                      </span>
+                  <i class="material-icons">home</i>
+              </a>
+              <a href="contribute.html">
+                  <span class="material-symbols-outlined">
+                      volunteer_activism
+                      </span>
+                  <i class="material-icons">contribute</i>
+              </a>
+              <a href="location.html">
+                  <span class="material-symbols-outlined">
+                      home_pin
+                      </span>
+                  <i class="material-icons">location</i>
+              </a>
+              <a href="info.html">
+                  <span class="material-symbols-outlined">
+                      info
+                      </span>
+                  <i class="material-icons">info</i>
+              </a>
+              <a href="about.html">
+                  <span class="material-symbols-outlined">
+                      person
+                      </span>
+                  <i class="material-icons">about</i>
+              </a>
+          </div>
             <div class="header-main-c">
                 <ul>
                     <li><a href="contact.html" class="current-page">Contact Us</a></li>
                 </ul>
             </div>
         </header>
+        <div class="content">
+            <p class="top">Please fill the form below to send us any queries that you might have.</p>
+            <div class="contact">
+              <div class="contact-form">
+                <h2>Type in your questions below.</h2>
+                <!-- This section contains the contact form. -->
+                <form id="form" name="contact">
+                  <!-- The contents are arrange in rows of two column. -->
+                  <div class="form-row">
+                    <div class="form-field">
+                      <label>First Name</label>
+                      <input type="text" name="fname" placeholder="Bob...">
+                      <p class="fname error">Please type a valid First Name.</p>
+                    </div>
+                    <div class="form-field">
+                      <label>Last Name</label>
+                      <input type="text" name="lname" placeholder="Alice...">
+                      <p class="lname error">Please type a valid Last Name.</p>
+                    </div>
+                  </div>
+                  <div class="form-row">
+                    <div class="form-field">
+                      <label>Email</label>
+                      <input type="email" name="email" placeholder="someone@somewhere.com">
+                      <p class="email error">Please type a valid Email.</p>
+                    </div>
+                    <div class="form-field">
+                      <label>Phone</label>
+                      <input type="text" name="phone" placeholder="07XXXXXXXX">
+                      <p class="phone error">Please type a valid Phone Number.</p>
+                    </div>
+                  </div>
+                  <div class="form-row">
+                    <div class="form-field">
+                      <label class="small">
+                        Date of Birth:
+                        <input type="date" name="DOB">
+                      </label>
+                      <p class="dob error">Please enter a valid Date of Birth.</p>
+                    </div>
+                    <div class="form-field">
+                      Gender:
+                      <select name="gender">
+                      <option selected value>SELECT...
+                      <option value="Male">Male
+                      <option value="Female">Female
+                      <option value="Prefer not to say">Prefer not to say
+                      </select>
+                    </div>
+                  </div>
+                  <!-- The fieldset element is used to highlight the actual message portion of the contact form. -->
+                  <fieldset>
+                    <legend>Contact:</legend>
+                    <p>How do you like to hear back from us?</p>
+                    <label class="small">
+                      <input type="checkbox" name="Email">
+                      Email
+                    </label>
+                    <label class="small">
+                      <input type="checkbox" name="Phone">
+                      Phone
+                    </label>
+                    <label>Subject</label>
+                    <input type="text" name="subject" placeholder="Subject...">
+                    <p class="subject error">The subject cannot be empty.</p>
+                    <label>Message</label>
+                    <textarea name="message" rows="5" placeholder="Message.."></textarea>
+                    <p class="message error">The subject cannot be empty.</p>
+                    <button type="submit" class="send-button">Send</button>
+                  </fieldset>
+                </form>
+              </div>
+              <!-- This section contains the contact information of the website. -->
+              <div class="contact-info">
+                <h2>Find Us</h2>
+                <table>
+                  <tr><td>Twitter</td><td><a href="construction.html">Follow for regular updates</a></td></tr>
+                  <tr><td>Facebook</td><td><a href="construction.html">Follow for regular updates</a></td></tr>
+                  <tr><td>Instagram</td><td><a href="construction.html">Follow for regular updates</a></td></tr>
+                  <tr><td>Phone</td><td>+44 78910 11XXX</td></tr>
+                  <tr><td>Email</td><td><a href="mailto:contact@hopehome.com">contact@hopehome.com</a></td></tr>
+                </table>
+                <img src="images/free.png" alt="location">
+              </div>
+            </div>
+        </div>
+        <footer class="footer">
+          <h2>Find Us</h2>
+          <div class="find-us">
+              <img src="images/sm.png" height="50" width="190" alt="socialmedia-icon">
+          </div>
+          <p>Copyright &#169; 2024 <a href="http://www.linkedin.com/in/aditya-prakash003" style="font-weight: 600; cursor: pointer;">Aditya Prakash</a>. All Rights Reserved.</p>
+        </footer>
     </body>
+    <script src="js/form.js"></script>
 </html>

@@ -1,0 +1,185 @@
+body {
+    background-image: linear-gradient(to right, black, var(--mb));
+    margin-left: 0px;
+    margin-right: 0px;
+}
+
+.hero{
+    padding-top: 120px;
+    margin-top: -8px;
+    width:100%;
+    height: fit-content;
+}
+
+.high{
+    background-image: linear-gradient(to right, var(--co), var(--cy));
+    font-family: roboto;
+    display: flex;
+    flex-direction: column;
+    width: 95%;
+    height:  fit-content;
+    margin: 0px 45px 45px 45px;
+    position: relative;
+    z-index: 3;
+    border-radius: 50px;
+}
+.b1{
+    gap: 10px;
+    margin: 40px;
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 10px;
+}
+
+.fo1{
+    font-family: roboto;
+    flex-grow: 5;
+    position: relative;
+    z-index: 6;
+    animation-duration: 3s;
+    animation-name: blur;
+}
+
+@keyframes blur {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.high h1{
+    font-size: 35px;
+    font-weight: 600;
+    color: var(--db);
+    text-align: center;
+    animation-duration: 3s;
+    animation-name: slide;
+}
+
+@keyframes slide {
+    from {
+        transform: translateX(-100%); 
+    }
+    to {
+        transform: translateX(0%);
+    }
+}
+
+
+.high ul{
+    font-size: 20px;
+    color: var(--db);
+    list-style-type: disc;
+    margin-top: -15px;
+}
+.b2{
+    gap: 10px;
+    margin: 40px;
+    display: flex;
+    flex-direction: row;
+    margin-top: 10px;
+}
+.fo2{
+    font-family: roboto;
+    flex-grow: 5;
+    position: relative;
+    z-index: 6;
+    animation-duration: 3s;
+    animation-name: blur;
+}
+
+@keyframes blur {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.pic1{
+    flex-grow: 5;
+    background-color: var(--db);
+    font-family: roboto;
+    position: relative;
+    height: fit-content;
+    z-index: 4;
+    border-radius: 25px; 
+}
+.high img{
+    margin: 10px;
+    width: 43vw;
+    height: 50vh;
+    border-radius: 15px;
+    opacity: 0; /* Initially set opacity to 0 */
+    animation-duration: 8s; /* Animation duration */
+    animation-name: fadeIn; /* Animation name */
+    animation-fill-mode: forwards; /* Keep the image at the final keyframe after animation */
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0; /* Fade in from completely transparent */
+    }
+    to {
+        opacity: 1; /* Fade in to fully opaque */
+    }
+} 
+
+.pic2{
+    background-color: var(--db);
+    font-family: roboto;
+    position: relative;
+    height: fit-content;
+    flex-grow: 5;
+    z-index: 5;
+    border-radius: 25px;
+}
+.footer{
+    h2, p{
+        margin: 0px;
+    }
+}
+.footer a{
+    color: var(--db);
+    text-decoration: none;
+}
+@media (max-width:1300px ) {
+    .b1{
+        flex-direction: column;
+    }
+    .b2{
+        flex-direction: column-reverse;
+        margin-bottom: 10px; 
+    }
+    .high img{
+        width: 85vw;
+    }
+}
+@media (max-width:920px) {
+    .high{
+        width: 90vw;
+    }
+    .high img{
+        width: 75vw;
+        height: 55vh;
+    }
+}
+@media (max-width:550px) {
+    .high{
+        width: 80vw;
+    }
+    .b1, .b2{
+        margin-left: 10px;
+    }
+    .pic1, .pic2{
+        margin-left: 10px;
+        width: 69vw;
+    }
+    .high img{
+        width: 63vw;
+        height: 30vh;
+    }
+}

@@ -1,5 +1,162 @@
-section{
-    width: 100%;
-    height:1000px;
+body{
     background-image: linear-gradient(to right, black, var(--mb));
+    background-repeat: no-repeat;
+}
+.hero {
+    align-self: center;
+    padding-top: 120px;
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    flex-direction: row;
+    position: relative;
+}
+
+.slideshow-container {
+    height: 100%;
+    position: relative;
+    flex-basis: 60%;
+    border-radius: 25px;
+    background-color: var(--db);
+    z-index: 2;
+    margin: 0px 10px 0px 2.5%;
+}
+
+.data{
+    align-self: center;
+    margin: 0px 2.5% 0px 10px;
+    flex-basis: 40%;
+    padding: 20px;
+    font-family: roboto;
+    position: relative;
+    height: fit-content;
+    border-radius: 25px;
+    background-image: linear-gradient(to right, var(--co), var(--cy));
+}
+.hero img{
+    width: 56vw;
+    border-radius: 25px; 
+    height: 54vh;
+    padding: 10px; 
+}
+.data h1{
+    color: var(--db);
+    font-size: 50px;
+    font-weight: 800;
+    text-align: center;
+    animation-duration: 3s;
+    animation-name: slide;
+}
+
+@keyframes slide {
+    from {
+        transform: translateX(-100%); 
+    }
+    to {
+        transform: translateX(0%);
+    }
+}
+
+.data p{
+    color: var(--db);
+    font-size: 18px;
+    font-weight: 400;
+    animation-duration: 3s;
+    animation-name: blur;
+}
+
+@keyframes blur {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+/* Hide all slides by default */
+.slide {
+    display: none;
+}
+
+/* Fade animation for slides */
+.fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@keyframes fade {
+    from {
+        opacity: 0.4;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.mi { 
+    font-family: roboto;
+    margin: 2.5% ;
+    width: 95%;
+    border-radius: 25px;
+    background-image: linear-gradient(to right, var(--co), var(--cy));
+    color: var(--db);
+}
+  
+.mi ul > li:nth-child(2) {
+    background-image: linear-gradient(to right, #09343e, #05262e);
+    color: var(--co);
+}
+  
+.mi ul {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    list-style-image: url("../images/logo_blue.png");
+} 
+
+.mi ul > li:nth-child(2){
+    list-style-image: url("../images/logo.png");
+}
+.mi h3{
+    font-size: 30px;
+    font-weight: 600;
+}
+  
+.mi ul li {
+    flex-basis: 30%;
+    text-align: center;
+    list-style-position: inside;
+    padding: 10px 0 10px 10px;
+}
+  
+.mi ul li h3 {
+    margin: 10px 0;
+}
+  
+.mi ul ol {
+    list-style: none;
+    list-style-type: upper-roman;
+}
+  
+.mi ul li ol li {
+    text-align: left;
+    margin-bottom: 10px;
+}
+@media (max-width: 900px) {
+    .hero{
+        padding-top: 80px;
+    }
+    .mi ul{
+    flex-direction: column;
+    }
+}
+@media (max-width:600px){
+    .hero{
+        flex-direction: column;
+        gap: 20px;
+    }
+    .hero img{
+        width: 95vw; 
+    }
 }
