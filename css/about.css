@@ -159,5 +159,6 @@ body{
     }
     .hero img{
         width: 95vw; 
+        height: 40vh;
     }
 }
