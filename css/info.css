@@ -178,12 +178,17 @@ body {
     .b1, .b2{
         margin-left: 10px;
     }
+    p{
+        font-size: 14px;
+    }
     .pic1, .pic2{
-        margin-left: 10px;
-        width: 69vw;
+        margin-left: 30px;
     }
     .high img{
         width: 63vw;
         height: 30vh;
+    }
+    .header-main-c a{
+        padding: 0 4px;
     }
 }
