@@ -102,6 +102,6 @@ form.addEventListener('submit', (e) => {
   else {
     message.style.borderColor = "var(--accent-color)";
     message_error.style.display = "none";
-    alert("You have successfully submitted your request.");
+    alert("Your request have been successfully submitted.");
   }
 })

@@ -33,7 +33,7 @@ body{
 }
 
 
-.info button{
+.info a{
     margin-left: 35%;
     background-color: transparent;
     font-size: 3vw;
@@ -58,7 +58,8 @@ body{
     }
 }
 
-.info button:hover {
+.info a:hover {
+    cursor: pointer;
     background-color: var(--db); /* Change background color on hover */
     color: var(--co); /* Change text color on hover */
 }
