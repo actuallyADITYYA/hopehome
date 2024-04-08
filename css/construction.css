@@ -56,3 +56,27 @@ button:hover{
     margin-left: 10px;
     font-size: 30px;
 }
+@media (max-width:1450px) {
+    .all{
+        height: 200vh;
+    }
+    .med{
+        flex-direction: column;
+    }
+    img{
+        width:100%;
+        height: fit-content;
+    }
+    .con p{
+        font-size: 30px;
+    }
+    #main {
+        font-size: 90px;
+    }
+    h1{
+        font-size: 50px;
+    }
+    button{
+        font-size: 35px;
+    }
+}
