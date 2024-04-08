@@ -79,4 +79,10 @@ button:hover{
     button{
         font-size: 35px;
     }
+    .med{ 
+        margin-top: 30%;
+    }
+}
+@media (max-width:600px) {
+    
 }
