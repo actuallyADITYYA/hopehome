@@ -272,7 +272,7 @@ button{
         display: none;
     }
     .main-home h1{
-        padding-top: 160px;
+        padding-top: 235px;
         padding-left: 10vw;
     }
     .main-home a{
@@ -321,5 +321,9 @@ button{
     }
     .donate-button{
         font-size: 12px;
+    }
+    .main-home h1{
+        font-size: 10vw;
+        line-height: 9vw;
     }
 }
