@@ -152,7 +152,7 @@
     padding: .2rem; /* This is to add whitespace so that the nav bar will not overlap with the bottom contents. */
     transition: background-color 0.3s ease-in-out;
 }
-.nav-bottom a:hover{
+.nav-bottom .current ,.nav-bottom a:hover{
     border-radius: 10px;
     color: var(--co);
     background-color: var(--db);
@@ -161,7 +161,7 @@
     font-family: Roboto;
     font-weight: normal;
     font-style: normal;
-    font-size: 20px;
+    font-size: 15px;
 }
 .material-symbols-outlined {
     font-family: 'Material Symbols Outlined';

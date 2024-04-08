@@ -245,6 +245,8 @@ strong{
     text-align: center;
 }
 .info a{
+    font-family: roboto;
+    background-color: transparent;
     border: 2px solid var(--db);
     padding: 10px;
     border-radius: 15px;
@@ -263,9 +265,6 @@ button{
     font-weight: 400;
     color: var(--db);
     background-color: transparent;
-}
-.learn:hover{
-    color: var(--co);
 }
 
 @media (max-width:1300px) {

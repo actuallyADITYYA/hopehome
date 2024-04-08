@@ -52,9 +52,8 @@ section{
         opacity: 1;
     }
 }
-.info  button{
+.info  a{
     text-align: center;
-    border-style: none;
     border: 2px solid var(--db);
     border-radius: 20px;
     color: var(--db);
@@ -63,15 +62,16 @@ section{
     font-size: 2vw;
     font-weight: 300;
     transition: 0.7s;
-    animation-duration: 2s;
+    animation-duration: 1s ;
     animation-name: blur;
 }
 
-.loc button:hover{
+.loc a:hover{
     background-color: var(--db);
     color: var(--co);
 }
 .map{
+    margin-top: 10px;
     border-radius: 40px;
     align-content: center;
     width: 100%;
@@ -165,7 +165,8 @@ td:hover {
 }
 @media (max-width:700px) {
     .container h2 {
-        font-size: 6vw;
+        margin-left: 10px;
+        font-size: 10vw;
     }
     table{
         font-size: 12px;
