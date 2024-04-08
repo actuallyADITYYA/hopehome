@@ -171,6 +171,11 @@ body{
     }
     .pic{
         width: 95%;
+        background-color: transparent;
+        border-radius: 40px;
+        margin: 8px 5px;
+        height: fit-content;
+
     }
     .info h1{
         font-size: 6vw;

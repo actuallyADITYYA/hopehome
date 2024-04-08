@@ -179,4 +179,16 @@ td:hover {
     .tab{
         margin-left: -8%;
     }
+    .loc{
+        width: 95%;
+        margin: 2.5%;
+        margin-top: 80px;
+    }
+    .info h1 ,.info a{
+        font-size: 25px;
+    }
+    .map{
+        padding: 0px;
+        background-color: transparent;
+    }
 }
