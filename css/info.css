@@ -6,7 +6,6 @@ body {
 
 .hero{
     padding-top: 120px;
-    margin-top: -8px;
     width:100%;
     height: fit-content;
 }
@@ -173,20 +172,28 @@ body {
 }
 @media (max-width:550px) {
     .high{
-        width: 80vw;
+        border-radius: 20px;
+        margin: 5%;
+        width: 90%;
+    }
+    .hero{
+        padding-top: 60px;
     }
     .b1, .b2{
-        margin-left: 10px;
+        gap: 0px;
+        margin: 10px 30px 0px 10px ;
     }
     p{
         font-size: 14px;
     }
     .pic1, .pic2{
-        margin-left: 30px;
+        padding: 0%;
+        background-color: transparent;
+        margin: 0px;
     }
     .high img{
-        width: 63vw;
-        height: 30vh;
+        width: 100%;
+        height: fit-content;
     }
     .header-main-c a{
         padding: 0 4px;

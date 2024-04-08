@@ -157,8 +157,12 @@ body{
         flex-direction: column;
         gap: 20px;
     }
+    .slideshow-container{
+        background-color: transparent;
+    }
     .hero img{
-        width: 95vw; 
-        height: 40vh;
+        padding: 0px;
+        width: 100%; 
+        height: 35vh;
     }
 }
