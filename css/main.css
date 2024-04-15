@@ -1,8 +1,7 @@
 body{
     width: 100%;
     background-repeat: no-repeat;
-    background-image: linear-gradient(to right, black, var(--mb));
-    /* Additional styles to ensure proper layout */
+    background-image: linear-gradient(to right, black, var(--mb));/* Additional styles to ensure proper layout */
     box-sizing: border-box; /* Reset box-sizing property */
     padding: 0; /* Reset padding */
     margin: 0; /* Reset margin */
@@ -11,6 +10,7 @@ body{
 a{
     cursor: pointer;
 }
+
 .main-home a{
     color: var(--db);
 }
@@ -22,6 +22,7 @@ a{
     margin-top: 89px;
     height: 128vh;
 }
+
 .main::before {
     content: ''; /* Required for pseudo-element */
     position: absolute;
@@ -30,6 +31,7 @@ a{
     background: linear-gradient(to right, rgba(0, 0, 0, 0.8),  rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0)); /* Degrading shadow */
     pointer-events: none; /* Ensures pointer events go through to the content */
 }
+
 .main-home h1{
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
     padding-top: 200px;
@@ -59,10 +61,13 @@ a{
     animation-duration: 2s;
     animation-name: slidein;
 }
+
 .main a:hover {
     background-color: var(--db); /* Change background color on hover */
     color: var(--co); /* Change text color on hover */
 }
+
+/*Transition effect*/
 @keyframes slidein {
     from{
         right: 50%;
@@ -71,6 +76,7 @@ a{
         right: 0%;
     }
 }
+
 .main-quote{
     margin-top: -30%;
     margin-left: 67%;
@@ -93,6 +99,7 @@ a{
     animation-name: sli;
 }
 
+/*Transition effect*/
 @keyframes sli{
     from{
         left: 50%;
@@ -102,6 +109,7 @@ a{
     }
 }
 
+/*positioning for the second quote*/
 .main-quote p:nth-child(2) {
     margin-left:90px; 
 }
@@ -113,7 +121,7 @@ a{
     left: -10px; /* Adjust the distance of the margin from the left */
     height: 100%;
     width: 10px; /* Width of the orange margin */
-    background-color: var(--co); /* Orange color */
+    background-color: var(--co);
     border-radius: 20px 0 0 20px; /* Ensure rounded border on the left*/
 }
 
@@ -127,6 +135,7 @@ section{
     width: 100%;
     height: fit-content;
 }
+
 .info{
     display: flex;
     flex-direction: row;
@@ -135,11 +144,13 @@ section{
     margin: 40px 20px 40px 20px;
     background-image: linear-gradient(to right, var(--co), var(--cy));
 }
+
 .g1{
     display: flex;
     flex-direction: column;
     flex-grow: 4;
 }
+
 .h1{
     text-align: center;
     font-size: 45px;
@@ -148,11 +159,13 @@ section{
     font-weight: 800;
     margin: 10px 20px 0px 40px;
 }
+
 .b1{
     margin: 0px 10px 0px 40px;
     display: flex;
     flex-direction: row;
 }
+
 .info ul{
     color: var(--db);
     list-style-type: disc;
@@ -160,23 +173,28 @@ section{
     font-size: 15px;
     font-weight: 400;
 }
+
 .info ul li{
     margin-top: 10px;
 }
+
 .l1, .l2{
     margin: 10px;
 }
+
 strong{
     font-family: roboto;
     font-size: 16px;
     font-weight: 700;
 }
+
 .main-form{
     margin: 20px;
     border-radius: 25px;
     background-color: var(--db);
     flex-grow: 6;
 }
+
 .donate-amounts {
     font-family: roboto;
     width: 35vw;
@@ -185,6 +203,7 @@ strong{
     justify-content: space-between;
     transition: background-color 0.5s, color 0.5s;
 }
+
 .donate-button {
     font-family: roboto;
     width: calc(25% - 10px);
@@ -198,6 +217,7 @@ strong{
     text-align: center;
     transition: background-color 0.5s, color 0.5s;
 }
+
 .main-form h2 {
     text-align: center;
     color: var(--co);
@@ -206,6 +226,7 @@ strong{
     font-weight: 500;
     margin-top: 30px;
 }
+
 .donate{
     font-family: roboto;
     margin: 0px 20px 20px 20px;
@@ -221,6 +242,7 @@ strong{
     transition: background-color 0.5s, color 0.5s;
 }
 
+/*effect on being clicked*/
 .donate.selected{
     background-color: var(--co);
     color: var(--db);
@@ -230,7 +252,8 @@ strong{
     background-color: var(--co);
     color: var(--db);
 }
-  
+
+/*effect on being clicked*/
 .donate-button.selected {
     background-color: var(--co);
     color: var(--db);
@@ -240,10 +263,12 @@ strong{
     background-color: var(--co);
     color: var(--db);
 }
+
 .f1{
     margin: 20px 0px 20px 0px;
     text-align: center;
 }
+
 .info a{
     font-family: roboto;
     background-color: transparent;
@@ -258,6 +283,7 @@ strong{
     background-color: var(--db);
     cursor: pointer;
 }
+
 button{
     border-style: none;
     font-family: roboto;
@@ -267,6 +293,7 @@ button{
     background-color: transparent;
 }
 
+/*styling for different screen sizes*/
 @media (max-width:1300px) {
     .main-quote p{
         display: none;
