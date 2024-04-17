@@ -84,11 +84,14 @@ button:hover{
     .con p{
         font-size: 30px;
     }
+    .con{
+        padding-bottom: 0%;
+    }
     #main {
-        font-size: 90px;
+        font-size: 80px;
     }
     h1{
-        font-size: 50px;
+        font-size: 30px;
     }
     button{
         font-size: 35px;
