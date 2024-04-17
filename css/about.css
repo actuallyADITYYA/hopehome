@@ -2,6 +2,7 @@ body{
     background-image: linear-gradient(to right, black, var(--mb));
     background-repeat: no-repeat;
 }
+
 .hero {
     align-self: center;
     padding-top: 120px;
@@ -12,6 +13,7 @@ body{
     position: relative;
 }
 
+/*Styling for the slideshow*/
 .slideshow-container {
     align-self: center;
     height: 100%;
@@ -34,12 +36,14 @@ body{
     border-radius: 25px;
     background-image: linear-gradient(to right, var(--co), var(--cy));
 }
+
 .hero img{
     width: 56vw;
     border-radius: 25px; 
     height: 54vh;
     padding: 10px; 
 }
+
 .data h1{
     color: var(--db);
     font-size: 50px;
@@ -49,6 +53,7 @@ body{
     animation-name: slide;
 }
 
+/*animation for the heading*/
 @keyframes slide {
     from {
         transform: translateX(-100%); 
@@ -66,6 +71,7 @@ body{
     animation-name: blur;
 }
 
+/*heading for the paragraph*/
 @keyframes blur {
     from {
         opacity: 0;
@@ -86,6 +92,7 @@ body{
     animation-duration: 1.5s;
 }
 
+/*Animation for the slide show*/
 @keyframes fade {
     from {
         opacity: 0.4;
@@ -104,6 +111,7 @@ body{
     color: var(--db);
 }
   
+/*Styling for the second element of the list*/
 .mi ul > li:nth-child(2) {
     background-image: linear-gradient(to right, #09343e, #05262e);
     color: var(--co);
@@ -113,12 +121,13 @@ body{
     display: flex;
     justify-content: center;
     flex-direction: row;
-    list-style-image: url("../images/logo_blue.png");
+    list-style-image: url("../images/logo_blue.png");/*icon for bullet points*/
 } 
 
 .mi ul > li:nth-child(2){
-    list-style-image: url("../images/logo.png");
+    list-style-image: url("../images/logo.png");/*icon for middle bullet point*/
 }
+
 .mi h3{
     font-size: 30px;
     font-weight: 600;
@@ -144,6 +153,8 @@ body{
     text-align: left;
     margin-bottom: 10px;
 }
+
+/*Responisive Styling*/
 @media (max-width: 900px) {
     .hero{
         padding-top: 80px;
@@ -152,6 +163,7 @@ body{
     flex-direction: column;
     }
 }
+
 @media (max-width:600px){
     .hero{
         flex-direction: column;

@@ -28,7 +28,7 @@ form.addEventListener('submit', (e) => {
   }
 
   else {
-    fname.style.borderBottomColor = "var(--accent-color)";
+    fname.style.borderBottomColor = "var(--co)";
     fname_error.style.display = "none";
   }
 
@@ -40,7 +40,7 @@ form.addEventListener('submit', (e) => {
   }
 
   else {
-    lname.style.borderBottomColor = "var(--accent-color)";
+    lname.style.borderBottomColor = "var(--co)";
     lname_error.style.display = "none";
   }
 
@@ -52,7 +52,7 @@ form.addEventListener('submit', (e) => {
   }
 
   else {
-    email.style.borderBottomColor = "var(--accent-color)";
+    email.style.borderBottomColor = "var(--co)";
     email_error.style.display = "none";
   }
 
@@ -64,7 +64,7 @@ form.addEventListener('submit', (e) => {
   }
 
   else {
-    phone.style.borderBottomColor = "var(--accent-color)";
+    phone.style.borderBottomColor = "var(--co)";
     phone_error.style.display = "none";
   }
 
@@ -76,7 +76,7 @@ form.addEventListener('submit', (e) => {
   }
 
   else {
-    dob.style.borderBottomColor = "var(--accent-color)";
+    dob.style.borderBottomColor = "var(--co)";
     dob_error.style.display = "none";
   }
 
@@ -88,7 +88,7 @@ form.addEventListener('submit', (e) => {
   }
 
   else {
-    subject.style.borderBottomColor = "var(--accent-color)";
+    subject.style.borderBottomColor = "var(--co)";
     subject_error.style.display = "none";
   }
 
@@ -100,7 +100,7 @@ form.addEventListener('submit', (e) => {
   }
 
   else {
-    message.style.borderColor = "var(--accent-color)";
+    message.style.borderColor = "var(--co)";
     message_error.style.display = "none";
     alert("Your request have been successfully submitted.");
   }

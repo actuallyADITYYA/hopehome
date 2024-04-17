@@ -46,7 +46,7 @@ body {
     padding: 2rem 3rem;
 }
   
-  /* Styling the contact information. */
+/* Styling the contact information. */
 .contact-info {
     flex-basis: 40%; /* This section will take the remaining 40% of the container. */
     padding: 2rem 3rem;
@@ -55,7 +55,7 @@ body {
     border-radius: 1rem;
 }
   
-  /* Styling the form and its contents. */
+/* Styling the form and its contents. */
 .form-row {
     display: flex;
     justify-content: space-between;
@@ -105,11 +105,13 @@ textarea[placeholder] {
 input[name="DOB"] {
     flex-basis: 65%;
 }
+
 input[type="date"]::-webkit-calendar-picker-indicator {
-    background: url('../images/calt.png') no-repeat;
+    background: url('../images/calt.png') no-repeat; /*icon for calender in orange color*/
     width: 20px;
     height: 18px;
 }
+
 label.small {
     display: flex;
     justify-content: flex-start;
@@ -152,7 +154,8 @@ textarea {
     background-color: transparent;
     margin-bottom: 5px;
 }
-  /* Styling the send button of the form. */
+
+/* Styling the send button of the form. */
 .send-button {
     padding: 5px 40px 5px 40px;
     border-radius: 5px;
@@ -166,8 +169,8 @@ textarea {
     background-color: var(--co);
     color: var(--db);
 }
-  
-  /* Styling the table containing contact info. */
+
+/* Styling the table containing contact info. */
 tr td {
     font-weight: 300;
     vertical-align: top;
@@ -188,7 +191,8 @@ tr td a:link {
     margin-top: 30px;
     transition: all 0.3s ease-in-out;
 }
-/* This will change and overwrite styles, when the width of the device is 900px or less. */
+
+/*Responsiveness of this page*/
 @media (max-width: 1150px) {
     .contact-form {
       flex-basis: 100%;

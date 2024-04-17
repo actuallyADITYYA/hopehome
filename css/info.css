@@ -10,6 +10,7 @@ body {
     height: fit-content;
 }
 
+/*styling for the main division of the page*/
 .high{
     background-image: linear-gradient(to right, var(--co), var(--cy));
     font-family: roboto;
@@ -22,6 +23,7 @@ body {
     z-index: 3;
     border-radius: 50px;
 }
+
 .b1{
     gap: 10px;
     margin: 40px;
@@ -40,6 +42,7 @@ body {
     animation-name: blur;
 }
 
+/*animation for the contents*/
 @keyframes blur {
     from {
         opacity: 0;
@@ -58,6 +61,7 @@ body {
     animation-name: slide;
 }
 
+/*animation for the heading*/
 @keyframes slide {
     from {
         transform: translateX(-100%); 
@@ -67,13 +71,13 @@ body {
     }
 }
 
-
 .high ul{
     font-size: 20px;
     color: var(--db);
     list-style-type: disc;
     margin-top: -15px;
 }
+
 .b2{
     gap: 10px;
     margin: 40px;
@@ -81,6 +85,7 @@ body {
     flex-direction: row;
     margin-top: 10px;
 }
+
 .fo2{
     margin-top: 40px;
     font-family: roboto;
@@ -91,6 +96,7 @@ body {
     animation-name: blur;
 }
 
+/*animation for the contents*/
 @keyframes blur {
     from {
         opacity: 0;
@@ -110,6 +116,7 @@ body {
     z-index: 4;
     border-radius: 25px; 
 }
+
 .high img{
     margin: 10px;
     width: 43vw;
@@ -121,6 +128,7 @@ body {
     animation-fill-mode: forwards; /* Keep the image at the final keyframe after animation */
 }
 
+/*animation for the images*/ 
 @keyframes fadeIn {
     from {
         opacity: 0; /* Fade in from completely transparent */
@@ -149,6 +157,8 @@ body {
     color: var(--db);
     text-decoration: none;
 }
+
+/*Responsiveness of this page*/
 @media (max-width:1300px ) {
     .b1{
         flex-direction: column;
@@ -161,6 +171,7 @@ body {
         width: 85vw;
     }
 }
+
 @media (max-width:920px) {
     .high{
         width: 90vw;
@@ -170,6 +181,7 @@ body {
         height: 55vh;
     }
 }
+
 @media (max-width:550px) {
     .high{
         border-radius: 20px;

@@ -197,6 +197,8 @@
     padding-bottom: 1rem;
     text-align: center;
 }
+
+/*Responsiveness of the navigation bar*/ 
 @media (max-width:1165px){
     .header-main-nav ul li{
         margin-right: 0px;

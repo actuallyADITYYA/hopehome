@@ -1,12 +1,15 @@
 body{
     background-image: linear-gradient(to right, black, var(--mb));
 }
+
 section{
     font-family: roboto;
     color: var(--db);
     width:100%;
     height: fit-content;
 }
+
+/*styling for the location division*/
 .loc{
     padding: 20px;
     width:60%;
@@ -20,6 +23,7 @@ section{
     padding: 2%;
     text-align: center;
 }
+
 .info h1{
     font-size: 4vw;
     font-weight: 700;
@@ -27,6 +31,7 @@ section{
     animation-name: slide;
 }
 
+/*animation for the heading*/
 @keyframes slide {
     from {
         transform: translateX(+50%);
@@ -37,6 +42,7 @@ section{
         opacity: 1;
     }
 }
+
 .info p{
     font-size: 20px;
     font-weight: 300;
@@ -44,6 +50,7 @@ section{
     animation-name: blur;
 }
 
+/*animation for the paragraphs*/
 @keyframes blur{
     from {
          opacity: 0;
@@ -52,6 +59,7 @@ section{
         opacity: 1;
     }
 }
+
 .info  a{
     text-align: center;
     border: 2px solid var(--db);
@@ -66,10 +74,12 @@ section{
     animation-name: blur;
 }
 
+/*hover effect for the link*/
 .loc a:hover{
     background-color: var(--db);
     color: var(--co);
 }
+
 .map{
     margin-top: 10px;
     border-radius: 40px;
@@ -79,11 +89,14 @@ section{
     padding: 10px;
     background-color: var(--db);
 }
+
+/*styling for the map*/
 .map img{
     border-radius: 30px;
     width: 100%;
     height: fit-content;
 }
+
 .container{
     gap: 20px;
     border-radius: 40px;
@@ -95,6 +108,7 @@ section{
     height: fit-content;
     background-image: linear-gradient(to right, var(--co), var(--cy)) ;
 }
+
 .container h2{
     margin-left: 60px;
     color: var(--db);
@@ -102,10 +116,12 @@ section{
     font-size: 3vw;
     font-weight: 600;
 }
+
 .address{
     width: 40%;
     height: fit-content;
 }
+
 .address ul{
     margin-top: 30px;
     margin-left: 90px;
@@ -115,39 +131,49 @@ section{
     font-size: 22px;
     font-weight: 400;
 }
+
 .tab{
     margin-left: 10%;
     width: 50%;
     height: fit-content;
 }
+
+/*styling for the table*/
 table {
     width: 100%;
     font-family: roboto;
     font-size: 20px;
     border-collapse: collapse;
 }
+
 th, td {
     border: 2px solid var(--db);
     text-align: left;
     padding: 10px;
 }
+
 th {
     color: var(--co);
     background-color: var(--db);
     transition: background-color 0.3s, color 0.3s;
 }
+
 td {
     transition: background-color 0.3s; 
 }
 
+/*hover effect for the table's content*/
 th:hover {
     background-color: var(--co); 
     color: var(--db); 
 }
+
 td:hover {
     background-color: var(--db); 
     color: var(--co); 
 }
+
+/*Responsiveness of this page*/
 @media (max-width:1300px) {
     .container{
         flex-direction: column;
